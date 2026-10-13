@@ -61,8 +61,8 @@ Looks up attachment hashes and link domains with the VirusTotal v3 API. Only has
 ## Quick start
 
 ```bash
-git clone https://github.com/<your-username>/baitcheck.git
-cd baitcheck
+git clone https://github.com/Kwame-w/Baitcheck.git
+cd Baitcheck
 python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
 
