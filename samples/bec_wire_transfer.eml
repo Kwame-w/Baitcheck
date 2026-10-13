@@ -1,0 +1,26 @@
+Return-Path: <dana.whitfield@corp-example.com>
+Received: from mx.sender.example (mx.sender.example [192.0.2.77]) by
+ mx.corp.example with ESMTPS; Mon, 12 Oct 2026 09:14:22 +0000
+Received: from mx.corp.example ([10.0.0.25]) by mail.corp.example; Mon, 12 Oct
+ 2026 09:14:23 +0000
+Authentication-Results: mx.corp.example; spf=pass
+ smtp.mailfrom=corp-example.com; dkim=pass header.d=corp-example.com;
+ dmarc=pass header.from=corp-example.com
+From: Dana Whitfield <dana.whitfield@corp-example.com>
+To: finance@corp.example
+Reply-To: Dana Whitfield <dana.whitfield.ceo@protonmail.com>
+Subject: Urgent wire transfer before end of day
+Date: Mon, 12 Oct 2026 09:14:20 +0000
+Message-ID: <9dd680245c9016a8@sender.example>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hi,
+
+I'm in meetings all day. I need you to process an urgent wire transfer of $48=
+,500 to a new vendor before 5pm. Keep this confidential for now; I'll explain=
+ later. Reply with confirmation once it's sent.
+
+Dana
+Sent from my iPhone

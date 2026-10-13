@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install -e ".[dev]"
+      - name: Lint
+        run: ruff check .
+      - name: Security scan (Bandit)
+        run: bandit -q -r baitcheck
+      - name: Tests
+        run: pytest -q
+      - name: Triage the sample emails
+        run: baitcheck samples/ --json reports/samples.json --markdown reports/notes --no-color
+      - uses: actions/upload-artifact@v4
+        if: matrix.python-version == '3.13'
+        with:
+          name: sample-triage
+          path: reports/
