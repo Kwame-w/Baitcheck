@@ -112,4 +112,4 @@ Baitcheck is a defensive, educational tool for analyzing emails you received or 
 
 ## License
 
-MIT
+MIT. See [LICENSE](LICENSE).
